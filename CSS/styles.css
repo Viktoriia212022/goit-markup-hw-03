@@ -1,0 +1,390 @@
+/* Колір основного заголовка, адреси #FFFFFF; */
+/* Колір заголовків, кнопок #212121 */
+/* Колір другорядний текст #757575 */
+/* посилання у футері rgba(255, 255, 255, 0.6); */
+/* акцент #2196F3 */
+/* Колір фона вторичний #2F303A, #F5F4FA */ 
+
+:root{
+    --primary-teхt-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-bg-color: #F5F4FA;
+    --title-white-color: #FFFFFF;
+    --bg-grey-color: #2F303A;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-teхt-color);
+    background-color: #FFFFFF;
+    letter-spacing: 0.03em;
+    
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid green;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.logo {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #000000;
+    margin-right: 90px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.logo-text{
+    color: #2196f3;
+}
+.logo-text-white{
+    color: var(--title-white-color);
+}
+
+p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+
+ul{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.header-nav .link{
+    text-decoration: none;
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: block;
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
+
+/* ----Header--- */
+
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header .container{
+    display: flex;
+}
+
+.header-nav{
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+}
+.nav{
+    display: flex;
+}
+.header-tel{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+
+
+.header-nav .link:hover,
+.header-nav .link:focus,
+.header-tel .item:hover,
+.header-tel .item:focus,
+.footer-phone .item:hover,
+.footer-phone .item:focus{
+    color: #2196F3;
+ }
+
+ .header .tel{
+    margin-left: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+ }
+
+  
+ .header-tel .item{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--primary-teхt-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+     }
+
+
+/* ----Hero----- */
+.hero{
+    background-color: #2F303A;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    }
+.hero-title{
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    
+     }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-text-color) 
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+/* --Quality-- */
+
+.quality-list {
+    display: flex;
+    gap: 30px;
+}
+
+.quality-list .title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+.quality-list .text{
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 10px;
+    }
+
+    /* ---Work----- */
+
+.work{
+    padding-top: 0;
+
+} 
+.work-title{
+    padding-bottom: 50px;
+}
+
+.benefits{
+    display: flex;
+    gap: 30px;
+}
+
+/* ---Comand--- */
+.team{
+    background-color:var(--primary-bg-color);
+    padding-top: 0;
+
+}
+
+.team-list{
+display: flex;
+
+}
+.card{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team .title{
+     margin-bottom: 10px;
+
+}
+.team-list .title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--title-text-color)
+}
+.team-list .text{
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    font-weight: 400;
+     }
+
+.lead{
+    background-color: var(--title-white-color);
+    border-radius: 0px 0px 4px 4px;
+    margin-right: 30px;
+    }
+
+.team-list :nth-child(4n){
+    margin-right: 0px;
+}
+
+ /* ---Button--- */
+
+ .button{
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color: var(--title-white-color);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 216px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+     }
+
+ .button:hover,
+ .button:focus{
+    background-color: #188CE8;
+ }
+ .button-f{
+    font-family: inherit;
+    cursor: pointer;
+    color: var(--title-text-color);
+    background-color: var(--primary-bg-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    border-radius: 4px;
+    border: 0;
+    padding: 6px 22px;
+ }
+
+ .button-f:hover,
+ .button-f:focus{
+    background-color: var(--accent-color);
+    color: var(--title-white-color)
+ }
+
+ .list-button{
+    margin-bottom: 50px;
+ }
+
+ .bottons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+       
+ }
+
+
+
+ /* --Footer--- */
+ .footer{
+    background-color: var(--bg-grey-color);
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+ }
+ .footer .text{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;   
+    color: var(--title-white-color);
+    margin-top: 20px;
+    margin-bottom: 10px;
+ }
+
+ .phone{
+    margin-top: 10px;
+
+ }
+
+ .footer-phone .item{
+    font-style: normal;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+ }
+
+
+ /* ---Foto--- */
+ .foto .title {
+     font-size: 18px;
+     line-height: 2;
+     letter-spacing: 0.06em;
+     color: var(--title-text-color);
+     text-align: left;
+ }
+ .foto .link{
+    text-decoration: none;
+ }
+ .foto .text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--primary-teхt-color);
+    text-align: left;
+       
+ }
+
+ img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+ }
+
+ .frame{
+    border: 1px solid #EEEEEE;
+    width:370px;
+    
+ }
+
+ .aside{
+    padding: 20px 24px;
+ }
+
+ .image{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+ }
